@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(217, 54%, 11%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+h3:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  margin-top: 15px;
+  line-height: 1.5rem;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+hr {
+  color: hsl(215, 32%, 27%);
+  margin-top: 15px;
+}
+
+.card {
+  width: 300px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 25px 3px rgba(0, 0, 0, 0.26);
+}
+
+.card-img {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 3px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(178, 100%, 50%, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.overlay img {
+  width: 50px;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.eth-detail {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eth-detail span:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eth-detail span:nth-child(1) img {
+  margin-right: 7px;
+}
+
+.eth-detail span:nth-child(2) {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eth-detail span:nth-child(2) img {
+  width: 18px;
+  margin-right: 6px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+  margin: 18px 0 5px;
+}
+
+.card-footer span span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.card-footer span span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-footer img {
+  width: 30px;
+  border: solid 1px white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
